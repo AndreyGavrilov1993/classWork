@@ -36,7 +36,7 @@
 
 
 # class Drob:
-#     def __int__(self, unit, num, denum):
+#     def __init__(self, unit, num, denum):
 #         self.unit = unit + num//denum
 #         self.num = num%denum
 #         self.denum = denum
