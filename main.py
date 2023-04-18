@@ -1,35 +1,34 @@
-from random import randint
-otrizat = 0
-polog = 0
-nechet = 0
-chet = 0
-krat3 = 1
-minmax = 1
-spisok = []
-chislo = int(input("Введите длину списка: "))
-for q in range(chislo):
-    spisok.append(randint(-100, 100))
-print(spisok)
-for w in range(0, chislo):
-    if spisok[w] < 0:
-        otrizat = otrizat+spisok[w]
-    elif spisok[w] > 0:
-        polog = polog+spisok[w]
-    if spisok[w] % 2 == 1:
-        nechet = nechet+spisok[w]
-    if spisok[w] % 2 == 0:
-        chet = chet+spisok[w]
-    if w % 3 == 0:
-        krat3 = krat3*spisok[w]
-    if spisok.index(min(spisok))<spisok.index(max(spisok)):
-        for e in range(spisok.index(min(spisok)),spisok.index(max(spisok))):
-            minmax = minmax*spisok[e]
-    else:
-        for e in range(spisok.index(max(spisok)), spisok.index(min(spisok))):
-            minmax = minmax * spisok[e]
-print("Сумма отрицательных чисел =", otrizat)
-print("Сумма положительных чисел =", polog)
-print("Сумма нечетных чисел =", nechet)
-print("Сумма четных чисел =", chet)
-print("Сумма чисел с индексами кратными 3 =", krat3)
-print("Произведение чисел между наибольшим и наименьшим =", minmax)
+# def my_max(a,b,c):
+#     maximum = a
+#     if maximum < b:
+#         maximum = b
+#     if maximum < c:
+#         maximum = c
+#     return maximum
+# print(my_max(3, 10, 10))
+
+# def factorial(n):
+#     a = 1
+#     for i in range(1, n+1):
+#         a = a*i
+#     return a
+# print(factorial(5))
+
+# def pryamougolnik(a, b):
+#     print("Площадь = ", a * b)
+#     print("Периметр = ", 2 * (a + b))
+#     print("Диагональ = ", (a**2+b**2)**0.5)
+# pryamougolnik(int(input("Введите сторону a:")),int(input("Введите сторону b:")))
+
+# def show_list(list0):
+#     q = 0
+#     for i in list0:
+#         q = q + i
+#     q = q/len(list0)
+#     return q
+# list1 = [0,1,2,3,4,5,6,7,8,9]
+# print(show_list(list1))
+
+# def delenie(q, w):
+#     return int(q / w)
+# print(delenie(7, 3))
